@@ -13,7 +13,7 @@ tasks:
     command: |
       export PATH="/workspace/.bin:$PATH"
       yes | sudo apt install libncurses5
-      lamdera live
+      echo "Start server with: lamdera live"
     
 vscode:
   extensions:
