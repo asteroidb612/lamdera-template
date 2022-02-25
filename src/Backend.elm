@@ -1,15 +1,7 @@
 module Backend exposing (..)
 
-import Dict
-import Env
-import Http
-import Json.Decode
-import Lamdera exposing (ClientId, SessionId)
-import Set
-import Task
-import Time
+import Lamdera
 import Types exposing (..)
-import Url
 
 
 
@@ -64,7 +56,7 @@ update msg model =
             ( model, Cmd.none )
 
 
-updateFromFrontend sessionId clientId msg model =
+updateFromFrontend _ _ msg model =
     case msg of
         ClientInit ->
             ( model, Cmd.none )

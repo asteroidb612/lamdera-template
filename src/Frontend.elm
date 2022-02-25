@@ -1,11 +1,9 @@
 module Frontend exposing (..)
 
-import Browser exposing (UrlRequest)
-import Browser.Dom as Dom
+import Browser
 import Browser.Navigation as Nav
 import Html
 import Lamdera
-import Task
 import Types
 import Url
 
